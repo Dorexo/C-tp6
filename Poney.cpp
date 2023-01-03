@@ -26,8 +26,8 @@ Poney::~Poney() {
 }
 
 float Poney::moveTo(Point p) {
-    float x = abs(getPoint().getX()) + abs(p.getX());
-    float y = abs(getPoint().getY()) + abs(p.getY());
+    float x = abs(getPoint().getX()) - abs(p.getX());
+    float y = abs(getPoint().getY()) - abs(p.getY());
     setPoint(p);
-    return sqrt(pow(x,2)+ pow(y,2));
+    return sqrt(x*x + y*y);
 }

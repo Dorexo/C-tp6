@@ -1,14 +1,15 @@
 #include<iostream>
 
-#include "Point.h"
+#include "Poney.h"
 
 using namespace std;
 
 
 int main(){
 
-    float a = -5.6;
-    cout<<endl;
+    Point p0(1.1,1);
+    Poney raph("raph",p0);
+    Point p1(1,2);
 
     return 0;
 }
